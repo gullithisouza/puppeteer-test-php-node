@@ -11,7 +11,7 @@ A execução mede o tempo individual de cada processo para uma análise clara de
 ## ⚙️ Pré-requisitos
 
 - Node.js instalado (v18+ recomendado)
-- PHP instalado (v7.4+ ou v8.0+ recomendado)
+- PHP instalado (v8.2+ recomendado)
 - Composer instalado
 - Puppeteer instalado via `npm`
 - Browsershot instalado via `composer`
@@ -32,10 +32,10 @@ npm install puppeteer
 
 ## 🚀 Como rodar o benchmark
 
-Execute o arquivo `rodar-testes.bat`:
+Execute o arquivo `start.bat`:
 
 ```bash
-rodar-testes.bat
+start.bat
 ```
 
 O script irá:
@@ -68,11 +68,9 @@ Todos os processos finalizados.
 
 ```plaintext
 /
-├── node/
-│   └── index.js         # Script Node.js para gerar PDF
-├── php/
-│   └── index.php        # Script PHP para gerar PDF
-├── rodar-testes.bat     # Script para executar os testes
+├── index.js         # Script Node.js para gerar PDF
+├── index.php        # Script PHP para gerar PDF
+├── start.bat     # Script para executar os testes
 ├── package.json         # Dependências Node.js (Puppeteer)
 ├── composer.json        # Dependências PHP (Browsershot)
 └── README.md            # Este arquivo
@@ -92,8 +90,8 @@ Todos os processos finalizados.
 ## 🏁 Resultado esperado
 
 Após a execução, você terá dois arquivos PDF gerados:
-- `hello-world-node.pdf`
-- `hello-world-php.pdf`
+- `pdf.node.pdf`
+- `pdf.php.pdf`
 
 E poderá comparar qual tecnologia foi mais rápida no seu ambiente.
 

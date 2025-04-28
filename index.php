@@ -6,7 +6,8 @@ use Spatie\Browsershot\Browsershot;
 
 try {
     
-    Browsershot::html(file_get_contents("./template.html"))->save('./pdf/pdf.php.pdf');
+    Browsershot::html(file_get_contents("./template.html"))
+    ->save('./pdf/pdf.php.pdf');
 
     echo "PDF gerado com PHP!/n";
 
